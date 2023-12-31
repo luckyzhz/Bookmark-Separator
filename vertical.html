@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Bookmark Separator</title>
+    <link rel="icon" href="images/vertical-line.svg">
+
+    <style>
+        .separator.vertical {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            width: 2em;
+            height: 2em;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        .separator.vertical::before {
+            content: "|";
+            font-size: 2em;
+            font-weight: bold;
+            color: #ff1423;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+        Drag this vertical line
+        <a class="separator vertical" href=""></a>
+        to your bookmarks toolbar.
+    </p>
+    <p>For a horizontal separator, click <a href="horizontal.html">here</a></p>
+</body>
+
+</html>
